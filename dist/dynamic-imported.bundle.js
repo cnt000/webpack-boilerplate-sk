@@ -1,27 +1,33 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["dynamic-imported"],{
+(self["webpackChunkwebpack_boilerplate_sk"] = self["webpackChunkwebpack_boilerplate_sk"] || []).push([["dynamic-imported"],{
 
-/***/ "EEpW":
+/***/ 594:
 /*!**********************************************************!*\
   !*** ./static/js/components/example/dynamic-imported.js ***!
   \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils */ "bERx");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils */ 201);
 
 
 const ExampleDi = async () => {
   const postsPromise = await fetch('https://jsonplaceholder.typicode.com/posts');
   const posts = await postsPromise.json();
-  return 'ExampleDi work <blockquote>' + Object(_utils__WEBPACK_IMPORTED_MODULE_0__["exampleUtilsDynamicImported"])(JSON.stringify(posts[0])) + '</blockquote>';
+  return 'ExampleDi work <blockquote>' + (0,_utils__WEBPACK_IMPORTED_MODULE_0__.exampleUtilsDynamicImported)(JSON.stringify(posts[0])) + '</blockquote>';
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (ExampleDi);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ExampleDi);
 
 
 /***/ })
 
 }]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zdGF0aWMvanMvY29tcG9uZW50cy9leGFtcGxlL2R5bmFtaWMtaW1wb3J0ZWQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBO0FBQUE7QUFBMEQ7O0FBRTFEO0FBQ0E7QUFDQTtBQUNBLHlDQUF5QywwRUFBMkI7QUFDcEU7O0FBRWUsd0VBQVMsRUFBQyIsImZpbGUiOiIuLi9kaXN0L2R5bmFtaWMtaW1wb3J0ZWQuYnVuZGxlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgZXhhbXBsZVV0aWxzRHluYW1pY0ltcG9ydGVkIH0gZnJvbSAnLi4vLi4vdXRpbHMnO1xuXG5jb25zdCBFeGFtcGxlRGkgPSBhc3luYyAoKSA9PiB7XG4gIGNvbnN0IHBvc3RzUHJvbWlzZSA9IGF3YWl0IGZldGNoKCdodHRwczovL2pzb25wbGFjZWhvbGRlci50eXBpY29kZS5jb20vcG9zdHMnKTtcbiAgY29uc3QgcG9zdHMgPSBhd2FpdCBwb3N0c1Byb21pc2UuanNvbigpO1xuICByZXR1cm4gJ0V4YW1wbGVEaSB3b3JrIDxibG9ja3F1b3RlPicgKyBleGFtcGxlVXRpbHNEeW5hbWljSW1wb3J0ZWQoSlNPTi5zdHJpbmdpZnkocG9zdHNbMF0pKSArICc8L2Jsb2NrcXVvdGU+Jztcbn1cblxuZXhwb3J0IGRlZmF1bHQgRXhhbXBsZURpO1xuIl0sInNvdXJjZVJvb3QiOiIifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly93ZWJwYWNrLWJvaWxlcnBsYXRlLXNrLy4vc3RhdGljL2pzL2NvbXBvbmVudHMvZXhhbXBsZS9keW5hbWljLWltcG9ydGVkLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUEwRDs7QUFFMUQ7QUFDQTtBQUNBO0FBQ0EseUNBQXlDLG1FQUEyQjtBQUNwRTs7QUFFQSxpRUFBZSxTQUFTLEVBQUMiLCJmaWxlIjoiLi4vZGlzdC9keW5hbWljLWltcG9ydGVkLmJ1bmRsZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGV4YW1wbGVVdGlsc0R5bmFtaWNJbXBvcnRlZCB9IGZyb20gJy4uLy4uL3V0aWxzJztcblxuY29uc3QgRXhhbXBsZURpID0gYXN5bmMgKCkgPT4ge1xuICBjb25zdCBwb3N0c1Byb21pc2UgPSBhd2FpdCBmZXRjaCgnaHR0cHM6Ly9qc29ucGxhY2Vob2xkZXIudHlwaWNvZGUuY29tL3Bvc3RzJyk7XG4gIGNvbnN0IHBvc3RzID0gYXdhaXQgcG9zdHNQcm9taXNlLmpzb24oKTtcbiAgcmV0dXJuICdFeGFtcGxlRGkgd29yayA8YmxvY2txdW90ZT4nICsgZXhhbXBsZVV0aWxzRHluYW1pY0ltcG9ydGVkKEpTT04uc3RyaW5naWZ5KHBvc3RzWzBdKSkgKyAnPC9ibG9ja3F1b3RlPic7XG59XG5cbmV4cG9ydCBkZWZhdWx0IEV4YW1wbGVEaTtcbiJdLCJzb3VyY2VSb290IjoiIn0=
