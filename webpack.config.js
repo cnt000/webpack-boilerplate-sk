@@ -1,12 +1,14 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const indexJsFile = path.join(__dirname, 'static', 'js', 'index.js')
+const printJsFile = path.join(__dirname, 'static', 'js', 'print.js')
+
 module.exports = {
   mode: 'development',
-  entry: './static/js/index.js',
   entry: {
-    app: './static/js/index.js',
-    print: './static/js/print.js',
+    app: indexJsFile,
+    print: printJsFile,
   },
   devtool: 'inline-source-map',
   plugins: [
@@ -14,7 +16,7 @@ module.exports = {
    ],
   output: {
     filename: '[name].bundle.js',
-    chunkFilename: '../dist/[name].bundle.js',
+    chunkFilename: path.join('..', 'dist', '[name].bundle.js'),
     path: path.resolve(__dirname, 'dist'),
   },
   optimization: {
