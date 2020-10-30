@@ -1,4 +1,4 @@
-import { exampleUtils } from '../../utils';
+import { exampleUtils } from '../../utils.js';
 
 const Example = async () => {
   console.log(exampleUtils('Example'));

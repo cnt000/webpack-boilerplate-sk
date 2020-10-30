@@ -1,7 +1,7 @@
 class ExampleClass {
-  constructor() {
+  constructor(value) {
     console.log('Example Class');
-    document.querySelector('body').innerHTML = 'Example Class work';
+    document.querySelector('body').innerHTML = `Example Class work: ${value}`;
   }
 }
 

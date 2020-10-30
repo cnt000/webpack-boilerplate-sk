@@ -1,3 +1,5 @@
-import ExampleClass from "./components/example/index-class";
+import ExampleClass from "./components/example/index-class.js";
+import { cube } from './math.js';
 
-new ExampleClass();
+new ExampleClass(cube(5));
+

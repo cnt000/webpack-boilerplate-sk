@@ -1,11 +1,11 @@
-import Example from "./components/example";
+import Example from "./components/example/index.js";
 
 Example();
 
 setTimeout(() => getComponent(), 2000);
 
 async function getComponent() {
-  const { default: di } = await import(/* webpackChunkName: "dynamic-imported" */ './components/example/dynamic-imported');
+  const { default: di } = await import(/* webpackChunkName: "dynamic-imported" */ './components/example/dynamic-imported.js');
   document.querySelector('body').innerHTML = await di();
   document.querySelector('body').append('DYNAMIC EXAMPLE WORKED!')
 }
