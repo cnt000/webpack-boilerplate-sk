@@ -2,23 +2,27 @@
 
 ProvidePlugin -> jquery?
 plugins: [
-    new webpack.ProvidePlugin({
-      _: 'lodash',
-    }),
-  ],
+new webpack.ProvidePlugin({
+_: 'lodash',
+}),
+],
+
+---
+
+eslint, precommit hook, husky (js)
 
 preset-env?
 babel
 browserlist
 
-eslint, precommit hook, husky (js)
-
+---
 
 https://webpack.js.org/guides/progressive-web-application/ -> impostiamo la progressive in secondo step?
 https://webpack.js.org/guides/entry-advanced/ -> potremmo definire i file css direttamente qui e spegnere la build scss da node.js?
 
 Questo serve?
-````
+
+```
 const ASSET_PATH = process.env.ASSET_PATH || '/';
 export default {
   output: {
@@ -33,4 +37,4 @@ export default {
   ],
 };
 
-````
+```

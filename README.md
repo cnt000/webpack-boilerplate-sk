@@ -10,8 +10,9 @@ Follow official site: https://webpack.js.org/guides/getting-started/
 To test use python server: python3 -m http.server
 
 Check also
+
 - https://github.com/taniarascia/webpack-boilerplate/tree/master/config
 - https://github.com/chuntington/webpack-boilerplate
 - https://github.com/ruanyf/webpack-demos
-
-
+- https://github.com/trivago/parallel-webpack
+- https://github.com/wbkd/webpack-starter
