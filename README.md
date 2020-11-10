@@ -15,5 +15,6 @@ https://webpack.js.org/guides/asset-modules/
 Check also
 - https://github.com/taniarascia/webpack-boilerplate/tree/master/config
 - https://github.com/chuntington/webpack-boilerplate
+- https://github.com/ruanyf/webpack-demos
 
 

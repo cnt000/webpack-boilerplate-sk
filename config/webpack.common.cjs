@@ -20,6 +20,16 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.png$/,
+        type: 'asset/resource',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.svg/,
+        type: 'asset/inline',
+        exclude: /node_modules/,
+      }
     ],
   },
   resolve: {
