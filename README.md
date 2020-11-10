@@ -9,9 +9,6 @@ Follow official site: https://webpack.js.org/guides/getting-started/
 
 To test use python server: python3 -m http.server
 
-Until
-https://webpack.js.org/guides/asset-modules/
-
 Check also
 - https://github.com/taniarascia/webpack-boilerplate/tree/master/config
 - https://github.com/chuntington/webpack-boilerplate

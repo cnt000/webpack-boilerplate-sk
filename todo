@@ -9,20 +9,15 @@ plugins: [
 
 preset-env?
 babel
-
-ts
-
 browserlist
 
-perttier eslint
+eslint, precommit hook, husky (js)
 
 
-https://webpack.js.org/guides/progressive-web-application/?
+https://webpack.js.org/guides/progressive-web-application/ -> impostiamo la progressive in secondo step?
+https://webpack.js.org/guides/entry-advanced/ -> potremmo definire i file css direttamente qui e spegnere la build scss da node.js?
 
-https://webpack.js.org/guides/entry-advanced/ ?
-
-in prod da dove linkerebbe i chunk dinamici?
-
+Questo serve?
 ````
 const ASSET_PATH = process.env.ASSET_PATH || '/';
 export default {

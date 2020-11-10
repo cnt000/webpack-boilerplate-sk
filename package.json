@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config ./config/webpack.prod.cjs",
-    "watch": "npm run build && webpack --config ./config/webpack.dev.cjs --watch"
+    "watch": "webpack --config ./config/webpack.dev.cjs --watch",
+    "format": "prettier-eslint --write \"$(pwd)/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
   "dependencies": {},
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "mini-svg-data-uri": "^1.2.3",
+    "prettier-eslint-cli": "^5.0.0",
     "ts-loader": "^8.0.11",
     "typescript": "^4.0.5",
     "webpack": "^5.4.0",
