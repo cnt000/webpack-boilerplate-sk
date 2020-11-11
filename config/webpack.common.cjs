@@ -53,5 +53,8 @@ module.exports = {
     path: path.resolve(__dirname, '..', 'dist'),
     assetModuleFilename: 'images/[name][hash][ext][query]',
   },
-  optimization: {},
+  optimization: {
+    moduleIds: 'deterministic',
+    runtimeChunk: 'single',
+  },
 };

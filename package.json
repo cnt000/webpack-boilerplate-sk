@@ -7,7 +7,8 @@
     "test": "jest",
     "build": "webpack --config ./config/webpack.prod.cjs",
     "watch": "webpack --config ./config/webpack.dev.cjs --watch",
-    "format": "prettier-eslint --write \"$(pwd)/**/*.js\""
+    "format": "prettier-eslint --write \"$(pwd)/**/*.js\"",
+    "lint": "eslint . --config .eslintrc.js"
   },
   "husky": {
     "hooks": {
@@ -46,6 +47,15 @@
     "@babel/preset-react": "^7.12.5",
     "babel-loader": "^8.2.1",
     "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-config-standard-react": "^11.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-standard": "^4.1.0",
     "husky": "^4.3.0",
     "mini-svg-data-uri": "^1.2.3",
     "prettier": "^2.1.2",
@@ -63,6 +73,5 @@
   "sideEffects": false,
   "volta": {
     "node": "14.13.1"
-  },
-  "type": "module"
+  }
 }
