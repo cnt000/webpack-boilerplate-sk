@@ -31,12 +31,17 @@ module.exports = {
         type: 'asset/inline',
         exclude: /node_modules/,
         generator: {
-          dataUrl: content => {
+          dataUrl: (content) => {
             content = content.toString();
             return svgToMiniDataURI(content);
-          }
-        }
-      }
+          },
+        },
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
     ],
   },
   resolve: {
@@ -48,17 +53,5 @@ module.exports = {
     path: path.resolve(__dirname, '..', 'dist'),
     assetModuleFilename: 'images/[name][hash][ext][query]',
   },
-  optimization: {
-    moduleIds: 'deterministic',
-    runtimeChunk: 'single',
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all',
-        },
-      },
-    },
-  },
+  optimization: {},
 };

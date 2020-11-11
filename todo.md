@@ -9,11 +9,13 @@ _: 'lodash',
 
 ---
 
-eslint, precommit hook, husky (js)
+eslint, precommit with eslint?
 
 preset-env?
 babel
 browserlist
+
+react
 
 ---
 
