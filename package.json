@@ -6,9 +6,10 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config ./config/webpack.prod.js",
-    "watch": "webpack --config ./config/webpack.dev.js --watch",
+    "watch": "webpack --config ./config/webpack.dev.js",
     "format": "prettier-eslint --write \"$(pwd)/**/*.js\"",
-    "lint": "eslint . --config .eslintrc.js"
+    "lint": "eslint .",
+    "format:lint": "npm run format && npm run lint"
   },
   "husky": {
     "hooks": {
@@ -38,8 +39,19 @@
   "babel": {
     "presets": [
       "@babel/preset-modules",
-      "@babel/preset-react"
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
     ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "all"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -73,5 +85,33 @@
   "sideEffects": false,
   "volta": {
     "node": "14.13.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jest": true,
+      "es2020": true
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "react/jsx-uses-vars": "error",
+      "react/prop-types": 0,
+      "comma-dangle": 0,
+      "import/no-unresolved": "off",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off"
+    },
+    "extends": [
+      "standard",
+      "standard-react",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "prettier"
+    ],
+    "ignorePatterns": [
+      "dist/*"
+    ]
   }
 }

@@ -6,7 +6,6 @@ import login from '../../img/datauriSvg/login.svg';
 Example();
 
 setTimeout(() => getComponent(), 2000);
-
 async function getComponent() {
   const { default: di } = await import(
     /* webpackChunkName: "dynamic-imported" */ './components/example/dynamic-imported'
