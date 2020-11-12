@@ -1,4 +1,4 @@
-import Example from './components/example/index.js';
+import Example from './components/example/index';
 import logoExample from '../../img/logo_cesarine.png';
 import pinImage from '../../img/svg/pin.svg';
 import login from '../../img/datauriSvg/login.svg';
@@ -9,7 +9,7 @@ setTimeout(() => getComponent(), 2000);
 
 async function getComponent() {
   const { default: di } = await import(
-    /* webpackChunkName: "dynamic-imported" */ './components/example/dynamic-imported.js'
+    /* webpackChunkName: "dynamic-imported" */ './components/example/dynamic-imported'
   );
   document.querySelector('body').innerHTML = await di();
   document.querySelector('body').append('DYNAMIC EXAMPLE WORKED!');

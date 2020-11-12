@@ -1,4 +1,4 @@
-import { exampleUtilsDynamicImported } from '../../utils.js';
+import { exampleUtilsDynamicImported } from '../../utils';
 
 const ExampleDi = async () => {
   const postsPromise = await fetch('https://jsonplaceholder.typicode.com/posts');

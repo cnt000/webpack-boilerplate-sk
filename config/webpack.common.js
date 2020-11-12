@@ -1,11 +1,11 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const svgToMiniDataURI = require('mini-svg-data-uri');
+const paths = require('./paths');
 
-const indexJsFile = path.join(__dirname, '..', 'static', 'js', 'index.js');
-const printJsFile = path.join(__dirname, '..', 'static', 'js', 'print.js');
-
-const indexTsFile = path.join(__dirname, '..', 'static', 'ts', 'index.ts');
+const indexJsFile = path.join(paths.jsSrc, 'index.js');
+const printJsFile = path.join(paths.jsSrc, 'print.js');
+const indexTsFile = path.join(paths.tsSrc, 'index.ts');
 
 module.exports = {
   entry: {

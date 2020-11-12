@@ -1,9 +1,9 @@
 import * as R from 'ramda';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ExampleClass from './components/example/ExampleClass.js';
-import App from './react-components/App.js';
-import { cube } from './math.js';
+import ExampleClass from './components/example/ExampleClass';
+import App from './react-components/App';
+import { cube } from './math';
 
 const ciao = new ExampleClass(cube(5));
 

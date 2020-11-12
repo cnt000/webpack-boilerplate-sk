@@ -1,4 +1,4 @@
-import Example from '../js/components/example/index.js';
+import Example from '../js/components/example/index';
 
 Example();
 
@@ -6,7 +6,7 @@ setTimeout(() => getComponent(), 2000);
 
 async function getComponent() {
   const { default: di } = await import(
-    /* webpackChunkName: "dynamic-imported" */ '../js/components/example/dynamic-imported.js'
+    /* webpackChunkName: "dynamic-imported" */ '../js/components/example/dynamic-imported'
   );
   const a = 12;
   const b = 30;
