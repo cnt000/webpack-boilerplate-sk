@@ -9,13 +9,8 @@ _: 'lodash',
 
 ---
 
-eslint, precommit with eslint?
-
 preset-env?
-babel
 browserlist
-
-react
 
 ---
 

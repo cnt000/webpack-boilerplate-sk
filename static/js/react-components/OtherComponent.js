@@ -1,3 +1,3 @@
-const OtherComponent = () => <div>LAZYCOMPONENT</div>;
+const OtherComponent = () => <div>LAZY COMPONENT LOADED</div>;
 
 export default OtherComponent;

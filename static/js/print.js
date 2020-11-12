@@ -2,7 +2,7 @@ import * as R from 'ramda';
 import ReactDOM from 'react-dom';
 import ExampleClass from './components/example/ExampleClass';
 import App from './react-components/App';
-import { cube } from './math';
+import { cube } from './utils/math';
 
 const ciao = new ExampleClass(cube(5));
 

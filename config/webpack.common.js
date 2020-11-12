@@ -13,6 +13,12 @@ module.exports = {
     appTs: indexTsFile,
     print: printJsFile,
   },
+  output: {
+    filename: '[name].bundle.js',
+    chunkFilename: path.join('..', 'dist', '[name].bundle.js'),
+    path: paths.build,
+    assetModuleFilename: 'images/[name][hash][ext][query]',
+  },
   plugins: [new CleanWebpackPlugin()],
   module: {
     rules: [
@@ -45,16 +51,14 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
-  },
-  output: {
-    filename: '[name].bundle.js',
-    chunkFilename: path.join('..', 'dist', '[name].bundle.js'),
-    path: path.resolve(__dirname, '..', 'dist'),
-    assetModuleFilename: 'images/[name][hash][ext][query]',
+    extensions: ['.ts', '.js'],
   },
   optimization: {
     moduleIds: 'deterministic',
+    // Once your build outputs multiple chunks, this option will ensure they share the webpack runtime
+    // instead of having their own. This also helps with long-term caching, since the chunks will only
+    // change when actual code changes, not the webpack runtime.
+    // alias for  {name: 'runtime'}
     runtimeChunk: 'single',
   },
 };

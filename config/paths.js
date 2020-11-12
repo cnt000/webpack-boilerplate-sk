@@ -6,5 +6,5 @@ module.exports = {
   tsSrc: path.join(__dirname, '../static', 'ts'),
 
   // Production build files
-  build: path.resolve(__dirname, '../dist'),
+  build: path.resolve(__dirname, '../static/dist'),
 };
