@@ -1,5 +1,13 @@
 ### todo
 
+---
+3. Diff veloce con
+- https://github.com/chuntington/webpack-boilerplate
+- https://github.com/wbkd/webpack-starter
+
+7. check bene grandezza del bundle variando la query browserlist
+
+4. mettere jquery:
 ProvidePlugin -> jquery?
 plugins: [
 new webpack.ProvidePlugin({
@@ -7,11 +15,8 @@ _: 'lodash',
 }),
 ],
 
----
-
-preset-env?
-browserlist
-
+5. differenze con SK
+6. importare in SK
 ---
 
 https://webpack.js.org/guides/progressive-web-application/ -> impostiamo la progressive in secondo step?

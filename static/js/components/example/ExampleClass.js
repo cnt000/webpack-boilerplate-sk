@@ -1,5 +1,5 @@
 class ExampleClass {
-  // #message = "Howdy"
+  // #message = 'Howdy';
   constructor(value) {
     console.log('Example Class');
     document.querySelector('#content').innerHTML = `Example Class work: ${value}`;

@@ -9,7 +9,8 @@
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "format": "prettier-eslint --write \"$(pwd)/**/*.js\"",
     "lint": "eslint . --fix",
-    "format:lint": "npm run format && npm run lint"
+    "format:lint": "npm run format && npm run lint",
+    "browserslist:update": "npx browserslist@latest --update-db"
   },
   "husky": {
     "hooks": {
@@ -38,13 +39,17 @@
   "dependencies": {},
   "babel": {
     "presets": [
-      "@babel/preset-modules",
+      "@babel/env",
       [
         "@babel/preset-react",
         {
           "runtime": "automatic"
         }
       ]
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-private-methods"
     ]
   },
   "prettier": {
@@ -55,7 +60,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@babel/preset-modules": "^0.1.4",
+    "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
     "babel-loader": "^8.2.1",
     "clean-webpack-plugin": "^3.0.0",
@@ -114,5 +119,10 @@
     "ignorePatterns": [
       "dist/"
     ]
-  }
+  },
+  "browserslist": [
+    ">0.5%",
+    "not IE 11",
+    "not op_mini all"
+  ]
 }

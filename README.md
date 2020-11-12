@@ -21,12 +21,25 @@ We don't have hot reload or devserver.
 ## Try with:
 
 To test use python server:
+
+````console
 $ python3 -m http.server
 $ open http://\[::\]:8000/templates/index-js.html
 $ open http://\[::\]:8000/templates/index-ts.html
 $ open http://\[::\]:8000/templates/print.html
+````
 
-Inspiring:
+# Browsers
+
+````console
+$ npx browserslist ">0.25%, not IE 11, not op_mini all"
+````
+
+see:
+- https://jamie.build/last-2-versions
+- https://babeljs.io/blog/2020/01/11/7.8.0
+
+# Inspiring:
 
 - https://github.com/taniarascia/webpack-boilerplate/tree/master/config
 
