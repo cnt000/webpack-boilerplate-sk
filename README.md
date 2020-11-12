@@ -15,7 +15,7 @@ We don't have hot reload or devserver.
 - Dynamic Import
 - Typescript
 - React
-- ES2020 ?
+- ES2020
 - Only modern browser (to test)
 
 ## Try with:

@@ -5,7 +5,7 @@
 - https://github.com/chuntington/webpack-boilerplate
 - https://github.com/wbkd/webpack-starter
 
-7. check bene grandezza del bundle variando la query browserlist
+7. check bene grandezza del bundle variando la query browserlist e esgtrarre da data studio le percentuali dei browsers
 
 4. mettere jquery:
 ProvidePlugin -> jquery?

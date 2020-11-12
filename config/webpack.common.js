@@ -4,14 +4,14 @@ const svgToMiniDataURI = require('mini-svg-data-uri');
 const paths = require('./paths');
 
 const indexJsFile = path.join(paths.jsSrc, 'index.js');
-const printJsFile = path.join(paths.jsSrc, 'print.js');
+const indexReactFile = path.join(paths.jsSrc, 'index-react.js');
 const indexTsFile = path.join(paths.tsSrc, 'index.ts');
 
 module.exports = {
   entry: {
     app: indexJsFile,
     appTs: indexTsFile,
-    print: printJsFile,
+    indexReact: indexReactFile,
   },
   output: {
     filename: '[name].bundle.js',

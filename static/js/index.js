@@ -7,6 +7,38 @@ import login from '../../img/datauriSvg/login.svg';
 Example();
 const ciao = new ExampleClass(logoExample);
 
+
+let person = {
+  profile: {
+    name: "asd",
+    age: 0,
+  }
+};
+
+console.log('%cNullish Coalescing Operator:', "color: red");
+console.log(person.profile.name ?? "Anonymous"); // ""
+console.log(person.profile.age ?? 18); // 0
+console.log(person.profile.address ?? "not set");
+
+let god = {};
+
+console.log('%cOptional Chaining Operator:', "color: red");
+console.log(god?.profile?.name ?? "Anonymous");
+console.log(god?.profile?.age ?? 18);
+
+console.log('%cBigInt:', "color: red");
+const bigNum = 100000000000000000000000000000n;
+console.log(bigNum * 2n); // 200000000000000000000000000000n
+
+console.log('%cDynamic Import:', "color: red");
+const doMath = async (num1, num2) => {
+  if (num1 && num2) {
+    const math = await import('./utils/math.js');
+    console.log(math.square(2));
+  };
+};
+doMath(4, 2);
+
 setTimeout(() => getComponent(ciao), 2000);
 
 async function getComponent() {
