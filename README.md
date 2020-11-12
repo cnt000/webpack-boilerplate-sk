@@ -12,7 +12,7 @@ We don't have hot reload or devserver.
 
 ## Features:
 
-- Dinamic Import
+- Dynamic Import
 - Typescript
 - React
 - ES2020 ?
@@ -31,6 +31,7 @@ Inspiring:
 - https://github.com/taniarascia/webpack-boilerplate/tree/master/config
 
 - https://github.com/chuntington/webpack-boilerplate
+- https://github.com/wbkd/webpack-starter
+
 - https://github.com/ruanyf/webpack-demos
 - https://github.com/trivago/parallel-webpack
-- https://github.com/wbkd/webpack-starter
