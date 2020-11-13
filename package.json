@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format:lint; git add ."
+      "pre-commit": "npm run format:lint; git add -A ."
     }
   },
   "repository": {
@@ -90,7 +90,6 @@
     "mini-svg-data-uri": "^1.2.3",
     "prettier": "^2.1.2",
     "prettier-eslint-cli": "^5.0.0",
-    "pretty-quick": "^3.1.0",
     "ramda": "^0.27.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
