@@ -1,6 +1,8 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 const svgToMiniDataURI = require('mini-svg-data-uri');
+const { eslintConfig } = require('../package.json');
 const paths = require('./paths');
 
 const indexJsFile = path.join(paths.jsSrc, 'index.js');
@@ -19,7 +21,7 @@ module.exports = {
     path: paths.build,
     assetModuleFilename: 'images/[name][hash][ext][query]',
   },
-  plugins: [new CleanWebpackPlugin()],
+  plugins: [new CleanWebpackPlugin(), new ESLintWebpackPlugin({ overrideConfig: eslintConfig })],
   module: {
     rules: [
       {
