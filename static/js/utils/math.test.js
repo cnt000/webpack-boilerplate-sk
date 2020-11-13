@@ -1,5 +1,5 @@
 const math = require('./math');
 
-test('adds 1 + 2 to equal 3', () => {
+test('cube  2 to equal 8', () => {
   expect(math.cube(2)).toBe(8);
 });
