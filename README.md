@@ -42,8 +42,8 @@ see:
 # Inspiring:
 
 - https://github.com/taniarascia/webpack-boilerplate/tree/master/config
-
 - https://github.com/chuntington/webpack-boilerplate
+
 - https://github.com/wbkd/webpack-starter
 
 - https://github.com/ruanyf/webpack-demos

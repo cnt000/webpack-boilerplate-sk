@@ -1,11 +1,9 @@
 ### todo
 
 ---
-3. Diff veloce con
+3. Diff con
 - https://github.com/chuntington/webpack-boilerplate
 - https://github.com/wbkd/webpack-starter
-
-7. check bene grandezza del bundle variando la query browserlist e esgtrarre da data studio le percentuali dei browsers
 
 4. mettere jquery:
 ProvidePlugin -> jquery?
@@ -16,7 +14,12 @@ _: 'lodash',
 ],
 
 5. differenze con SK
+
 6. importare in SK
+
+7. check bene grandezza del bundle variando la query browserlist e esgtrarre da data studio le percentuali dei browsers
+
+
 ---
 
 https://webpack.js.org/guides/progressive-web-application/ -> impostiamo la progressive in secondo step?
@@ -40,3 +43,24 @@ export default {
 };
 
 ```
+
+
+
+optimization: {
+		minimize: !DevMode,
+		minimizer: [
+			new TerserPlugin({
+				parallel: true,
+				test: /\.js(\?.*)?$/i
+			})
+		],
+		splitChunks: {
+			cacheGroups: {
+				vendors: {
+					chunks: 'all',
+					enforce: true,
+					test: /[\\/]node_modules[\\/]/
+				}
+			}
+		}
+	},

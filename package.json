@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "watch": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "watch": "cross-env NODE_ENV=development webpack --progress --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --config config/webpack.prod.js",
     "format": "prettier-eslint --write \"$(pwd)/**/*.js\"",
     "lint": "eslint . --fix",
     "format:lint": "npm run format && npm run lint",
@@ -23,12 +23,21 @@
   },
   "keywords": [
     "webpack",
+    "webpack",
+    "webpack 5",
+    "webpack boilerplate",
     "js",
     "ts",
+    "javascript",
+    "typescript",
     "jest",
     "eslint",
     "prettier",
-    "babel"
+    "babel",
+		"boilerplate",
+		"starter",
+    "react",
+    "jquery"
   ],
   "author": "Edoardo Gargano",
   "license": "MIT",
