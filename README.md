@@ -62,6 +62,7 @@ We don't have hot reload or devserver.
 - React
 - ES2020
 - Only modern browser (to test)
+- Jest
 
 ## Try with:
 
