@@ -62,5 +62,17 @@ module.exports = {
     // change when actual code changes, not the webpack runtime.
     // alias for  {name: 'runtime'}
     runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
+  externals: {
+    jquery: 'jQuery',
   },
 };

@@ -1,26 +1,20 @@
 ### todo
 
 ---
-3. Diff con
-- https://github.com/chuntington/webpack-boilerplate
-- https://github.com/wbkd/webpack-starter
 
-4. mettere jquery:
-ProvidePlugin -> jquery?
-plugins: [
-new webpack.ProvidePlugin({
-_: 'lodash',
-}),
-],
-
-5. differenze con SK
+5. differenze con SK - dove mette le img prima di pusharle in CDN? directory corrette?
 
 6. importare in SK
 
 7. check bene grandezza del bundle variando la query browserlist e esgtrarre da data studio le percentuali dei browsers
 
+8. diff con tutti i readme per farlo piu carino
 
 ---
+
+class properties... ???
+
+window.$ come poter rimuovere window?
 
 https://webpack.js.org/guides/progressive-web-application/ -> impostiamo la progressive in secondo step?
 https://webpack.js.org/guides/entry-advanced/ -> potremmo definire i file css direttamente qui e spegnere la build scss da node.js?
@@ -43,24 +37,3 @@ export default {
 };
 
 ```
-
-
-
-optimization: {
-		minimize: !DevMode,
-		minimizer: [
-			new TerserPlugin({
-				parallel: true,
-				test: /\.js(\?.*)?$/i
-			})
-		],
-		splitChunks: {
-			cacheGroups: {
-				vendors: {
-					chunks: 'all',
-					enforce: true,
-					test: /[\\/]node_modules[\\/]/
-				}
-			}
-		}
-	},

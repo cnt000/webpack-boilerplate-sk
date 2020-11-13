@@ -1,6 +1,6 @@
 # BOILERPLATE Webpack 5 - for a legacy platform named Scorpion King
 
-From official site: https://webpack.js.org/guides/getting-started/
+Follow white rabbit (official site): https://webpack.js.org/guides/getting-started/
 
 ## App has many entry points:
 

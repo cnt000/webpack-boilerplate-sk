@@ -4,6 +4,9 @@ import logoExample from '../../img/logo_cesarine.png';
 import pinImage from '../../img/svg/pin.svg';
 import login from '../../img/datauriSvg/login.svg';
 
+window.$('.info').on('click', () => alert('info!'));
+window.jQuery('.info2').on('click', () => alert('info2!'));
+
 Example();
 const ciao = new ExampleClass(logoExample);
 
