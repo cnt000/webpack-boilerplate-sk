@@ -1,20 +1,18 @@
 ### todo
 
----
+1. differenze con SK - dove mette le img prima di pusharle in CDN? directory corrette?
 
-5. differenze con SK - dove mette le img prima di pusharle in CDN? directory corrette?
+2. importare in SK
 
-6. importare in SK
-
-7. check bene grandezza del bundle variando la query browserlist e esgtrarre da data studio le percentuali dei browsers
-
-8. diff con tutti i readme per farlo piu carino
+3. check bene grandezza del bundle variando la query browserlist e estrarre da data studio le percentuali dei browsers
 
 ---
 
 class properties... ???
 
 window.$ come poter rimuovere window?
+
+- https://github.com/trivago/parallel-webpack ?
 
 https://webpack.js.org/guides/progressive-web-application/ -> impostiamo la progressive in secondo step?
 https://webpack.js.org/guides/entry-advanced/ -> potremmo definire i file css direttamente qui e spegnere la build scss da node.js?
