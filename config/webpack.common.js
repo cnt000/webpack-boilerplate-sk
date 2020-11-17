@@ -64,9 +64,9 @@ module.exports = {
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
+        react: {
+          test: /[\\/]node_modules[\\/]react(.*)/,
+          name: 'react',
           chunks: 'all',
         },
       },
