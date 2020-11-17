@@ -60,8 +60,9 @@ We don't have hot reload or devserver.
 - Dynamic Import
 - Typescript
 - React
+- Styled Components
 - ES2020
-- Only modern browser (to test)
+- Only modern browser
 - Jest
 
 ## Try with:
@@ -72,7 +73,7 @@ To test use python server:
 $ python3 -m http.server
 $ open http://\[::\]:8000/templates/index-js.html
 $ open http://\[::\]:8000/templates/index-ts.html
-$ open http://\[::\]:8000/templates/index-react.html
+$ open http://\[::\]:8000/templates/index-react.html -> a bundle contains only react and styled-copmponents
 ````
 
 # Browsers
