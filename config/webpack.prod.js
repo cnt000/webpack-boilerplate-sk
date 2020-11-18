@@ -5,7 +5,7 @@ module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map', // devtool: false,
   performance: {
-    hints: false,
+    hints: 'warning',
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
   },
